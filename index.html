@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pabindu Gamage | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Your Name</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Pabindu Gamage</h1>
-    <h2>BSc(Hons)Eng|MSc|IEng|MIET</h2>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <img src="images/your-photo.jpg" alt="Your Photo" class="profile-pic">
-      <h2>Electrical & Building Services Engineer</h2>
-      <p>Welcome to my professional portfolio. My work aligns project designs with industry standards, enhancing quality and fostering efficiency across teams. By supporting compliance frameworks and integrating solutions, I enable project success and operational continuity. My dedication to advancing sustainable engineering practices drives my contributions to Powerplus Group’s mission of delivering outstanding building services solutions.</p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <!-- Add your projects here -->
-        <div class="project">
-          <img src="images/project1.jpg" alt="Project 1 screenshot">
-          <h3>Project Title</h3>
-          <p>Short description of your project.</p>
-          <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+  <div class="hero">
+    <div class="profile-card">
+      <img class="profile-img" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile"/>
+      <h1>Your Name</h1>
+      <p class="subtitle">UI/UX Designer & Frontend Developer</p>
+      <div class="socials">
+        <a href="#" class="icon-btn"><span>🔗</span></a>
+        <a href="#" class="icon-btn"><span>🐦</span></a>
+        <a href="#" class="icon-btn"><span>💼</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section class="about card">
+    <h2>About Me</h2>
+    <p>Passionate designer and developer creating beautiful, modern interfaces. I love turning complex problems into simple, elegant solutions.</p>
+  </section>
+
+  <section class="skills card">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span class="tag blue">Figma</span>
+      <span class="tag purple">React</span>
+      <span class="tag blue">CSS</span>
+      <span class="tag purple">HTML5</span>
+      <span class="tag blue">JavaScript</span>
+      <span class="tag purple">UI Design</span>
+    </div>
+  </section>
+
+  <section class="projects card">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 1"/>
+        <div class="project-info">
+          <h3>Modern Dashboard</h3>
+          <p>A stylish analytics dashboard for tracking business metrics. Built with React and Chart.js.</p>
         </div>
       </div>
-    </section>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Write a short bio here. Mention your skills, background, and interests.</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    </section>
-  </main>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Project 2"/>
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio template with smooth animations and responsive design.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Project 3"/>
+        <div class="project-info">
+          <h3>Mobile App UI</h3>
+          <p>Concept UI for a finance management app, featuring vibrant gradients and clean layouts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact card">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Your Name. Inspired by Dribbble.</p>
   </footer>
 </body>
-
 </html>
-
