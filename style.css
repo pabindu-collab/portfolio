@@ -42,11 +42,20 @@ body {
 .profile-img {
   width: 96px;
   height: 96px;
-  border-radius: 12%;
+  border-radius: 50%; /* keep it circular but smooth */
   margin-bottom: 1.2rem;
-  border: none;
-  box-shadow: 0 4px 12px rgba(166, 133, 226, 0.2);
-  transition: box-shadow 0.3s ease;
+  border: none; /* no harsh borders */
+  background: linear-gradient(135deg, #a685e2 0%, #f0f0f0 100%);
+  padding: 4px; /* optional, for a soft glow around the image */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* soft, subtle shadow */
+  overflow: hidden; /* ensures image stays inside the rounded shape */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional hover effect: gentle lift */
+.profile-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .profile-card h1 {
@@ -228,4 +237,5 @@ footer {
   font-size: 1rem;
   letter-spacing: 0.01em;
 }
+
 
